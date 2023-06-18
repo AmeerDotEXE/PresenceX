@@ -10,8 +10,15 @@
 	<div>Coming Soon</div>
 	<div>Latest Version: <span id="last-release-v">Unkown</span></div>
 	<div>Notes: <span id="last-release-n">Unkown</span></div>
-	<div id="last-release-download-buttons"></div>
+	<div id="last-release-download-buttons">
+		<button id="btn-windows-x86_64">Download for windows (x86_64)</button>
+	</div>
 	<script>
+		document.querySelector('#btn-windows-x86_64').addEventListener('click', () => {
+			//url click counter
+			window.location.href = 'https://bit.ly/PresenceX-windows-x86_64';
+		});
+		
 		(async () => {
 			let latestRelease = await fetch('./latest-release.json')
 				.then(r => r.json())
@@ -21,28 +28,28 @@
 			document.querySelector('#last-release-v').textContent = latestRelease.version;
 			document.querySelector('#last-release-n').textContent = latestRelease.notes;
 
-			let buttonsContainer = document.querySelector('#last-release-download-buttons');
-			let availablePlatforms = Object.keys(latestRelease.platforms);
+			// let buttonsContainer = document.querySelector('#last-release-download-buttons');
+			// let availablePlatforms = Object.keys(latestRelease.platforms);
 
-			for (let i = 0; i < availablePlatforms.length; i++) {
-				let fullPlatformName = availablePlatforms[i];
-				let formattedName = fullPlatformName
-					.split('-')
-					.map((part, partIndex) => partIndex === 0 ? part : `(${part})`)
-					.join(" ")
-				;
+			// for (let i = 0; i < availablePlatforms.length; i++) {
+			// 	let fullPlatformName = availablePlatforms[i];
+			// 	let formattedName = fullPlatformName
+			// 		.split('-')
+			// 		.map((part, partIndex) => partIndex === 0 ? part : `(${part})`)
+			// 		.join(" ")
+			// 	;
 
-				let button = document.createElement('button');
-				button.textContent = `Download for ${formattedName}`;
-				let url = latestRelease.platforms[fullPlatformName].url;
-				if (url)
-					button.addEventListener('click', () => {
-						window.location.href = url;
-					})
-				;
+			// 	let button = document.createElement('button');
+			// 	button.textContent = `Download for ${formattedName}`;
+			// 	let url = latestRelease.platforms[fullPlatformName].url;
+			// 	if (url)
+			// 		button.addEventListener('click', () => {
+			// 			window.location.href = url;
+			// 		})
+			// 	;
 
-				buttonsContainer.appendChild(button);
-			}
+			// 	buttonsContainer.appendChild(button);
+			// }
 		})();
 	</script>
 </body>
