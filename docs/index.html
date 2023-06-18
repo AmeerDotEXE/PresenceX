@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PresenceX</title>
+</head>
+<body>
+	<div>Coming Soon</div>
+	<div>Latest Version: <span id="last-release-v">Unkown</span></div>
+	<div>Notes: <span id="last-release-n">Unkown</span></div>
+	<div id="last-release-download-buttons"></div>
+	<script>
+		(async () => {
+			let latestRelease = await fetch('./latest-release.json')
+				.then(r => r.json())
+				.catch(() => null);
+			if (!latestRelease) return;
+
+			document.querySelector('#last-release-v').textContent = latestRelease.version;
+			document.querySelector('#last-release-n').textContent = latestRelease.notes;
+
+			let buttonsContainer = document.querySelector('#last-release-download-buttons');
+			let availablePlatforms = Object.keys(latestRelease.platforms);
+
+			for (let i = 0; i < availablePlatforms.length; i++) {
+				let fullPlatformName = availablePlatforms[i];
+				let formattedName = fullPlatformName
+					.split('-')
+					.map((part, partIndex) => partIndex === 0 ? part : `(${part})`)
+					.join(" ")
+				;
+
+				let button = document.createElement('button');
+				button.textContent = `Download for ${formattedName}`;
+				let url = latestRelease.platforms[fullPlatformName].url;
+				if (url)
+					button.addEventListener('click', () => {
+						window.location.href = url;
+					})
+				;
+
+				buttonsContainer.appendChild(button);
+			}
+		})();
+	</script>
+</body>
+</html>
