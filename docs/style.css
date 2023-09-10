@@ -1,0 +1,309 @@
+:root {
+	--text-primary: #ffffff;
+	--text-secondary: #B7B7B7;
+	--background-primary: #8F57EA;
+	--background-secondary: #5768EA;
+	--background-tertiary: #0f0f0f;
+
+	--font-primary: Arial, Helvetica, sans-serif;
+	--font-secondary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+	background-color: var(--background-tertiary);
+	color: var(--text-primary);
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.w-fit-content,
+.text-gradient {
+	width: fit-content;
+    width: -moz-fit-content;
+}
+.flex-space {
+	flex-grow: 1;
+}
+.text-gradient {
+	background: linear-gradient(90deg, #5768EA 0%, #8F57EA 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+.background-glow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.glowball {
+	position: absolute;
+	border-radius: 50%;
+	height: 20rem;
+	width: 20rem;
+	background-color: var(--background-primary);
+	filter: blur(250px);
+}
+.glowball:nth-child(2n) {
+	background-color: var(--background-secondary);
+}
+
+.page-content {
+	position: relative;
+	z-index: 1;
+	max-width: 108rem;
+	margin: 0 auto;
+}
+
+.app-container {
+	margin-top: min(18%, 15rem);
+}
+.app-content {
+	margin-left: 9%;
+	display: flex;
+}
+.app-icon {
+	margin-right: 2.5rem;
+	width : 16.5rem;
+	height: 16.5rem;
+}
+
+.app-details {
+	display: flex;
+	flex-direction: column;
+}
+.app-name {
+	margin: 0;
+	margin-top: -0.5rem;
+	font-family: var(--font-primary);
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.app-name .name-tag {
+	cursor: default;
+    user-select: none;
+	font-size: 1rem;
+	padding: 0 0.25rem;
+	--text-color: hsl(40 80% 50% / 1);
+	border: 3px solid var(--text-color);
+	border-radius: 0.5rem;
+	background-image: linear-gradient(var(--text-color), var(--text-color));
+	text-shadow: 0 0 8px var(--text-color);
+	box-shadow: 0 0 4px var(--text-color), inset 0 0 4px var(--text-color);
+}
+.app-description {
+    display: block;
+    max-width: 75%;
+	color: var(--text-secondary);
+	font-family: var(--font-primary);
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.main-buttons {
+	display: flex;
+    align-items: flex-end;
+}
+.main-buttons .main-button {
+	margin-right: -1rem;
+}
+
+.main-button {
+	position: relative;
+	cursor: pointer;
+}
+.main-button .main-button-text {
+	white-space: nowrap;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--font-primary);
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.main-button.small .main-button-text {
+	font-family: var(--font-primary);
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.main-button.large .main-button-text {
+	font-family: var(--font-primary);
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+}
+.main-button:hover svg {
+	fill: url(#main-button-gradient);
+}
+.main-button:hover .main-button-text {
+	background-image: linear-gradient(black, black);
+}
+
+.app-images {
+	/* width: 100%; */
+	margin: 0 auto;
+	margin-top: 8rem;
+	gap: 2rem;
+	display: flex;
+    justify-content: center;
+	--images-hide-inwards: 0;
+}
+.app-image {
+	width: 20rem;
+	height: 15rem;
+	/* background-color: rgba(217, 217, 217, 0.30); */
+	border-radius: 8px;
+	/* border: 2px solid var(--background-primary); */
+	/* box-shadow: 0 0 0.25rem white; */
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	transition: transform 150ms ease;
+}
+.app-image.center {
+	align-items: center;
+}
+.app-image img {
+    position: absolute;
+    max-width: 100%;
+	min-height: 100%;
+}
+.app-image:first-child {
+	margin-right: var(--images-hide-inwards);
+}
+.app-image:last-child {
+	margin-left: var(--images-hide-inwards);
+}
+
+.app-image:nth-child(2) {
+	z-index: 15;
+}
+.app-images:not(:hover) .app-image:nth-child(2),
+.app-image:hover {
+	transform: scale(1.15);
+	z-index: 20;
+}
+
+.app-features {
+	/* margin: 0 auto; */
+	margin-top: 8rem;
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.app-feature {
+	flex-shrink: 0;
+	/* margin-top: 1.5rem; */
+	text-align: center;
+	padding: 1.5rem 1rem 2rem;
+	border-radius: 1rem;
+	/* border: 2px solid var(--background-secondary); */
+	box-shadow: 
+		-2px -2px 6px var(--background-secondary),
+		 2px  2px 6px var(--background-primary)
+	;
+	/* box-shadow: 0 0 8px var(--background-secondary); */
+	transition: box-shadow 150ms ease;
+}
+.feature-name {
+	margin-bottom: 0.5rem;
+    /* max-width: 24rem; */
+	color: var(--text-primary);
+	font-family: var(--font-primary);
+	font-size: 2.25rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.feature-description {
+    max-width: 30rem;
+	color: var(--text-secondary);
+	font-family: var(--font-primary);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.app-feature:hover {
+	/* transform: scale(1.1); */
+	box-shadow: 
+		-2px -2px 6px 2px var(--background-secondary),
+		 2px  2px 6px 2px var(--background-primary)
+	;
+}
+
+.buttons-section {
+	margin: 0 auto;
+	margin-top: 16rem;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	gap: 1rem;
+}
+
+.footer {
+	margin-top: 16rem;
+	/* background-color: var(--background-secondary); */
+	box-shadow: 0 0 250px var(--background-secondary);
+	width: 100%;
+	padding: 1rem 3rem;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
+	box-sizing: border-box;
+}
+.footer span {
+	font-family: var(--font-secondary);
+}
+
+@media screen and (max-width: 65rem) {
+	.app-content {
+		margin-left: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.app-icon {
+		margin: 0;
+		margin-bottom: 1rem;
+	}
+	.app-name .name-tag {
+		display: none;
+	}
+	.app-details {
+		align-items: center;
+		text-align: center;
+	}
+	.flex-space {
+		height: 1rem;
+	}
+
+	.app-images {
+		/* flex-direction: column; */
+		width: auto;
+		margin-left: 2rem;
+		margin-right: 2rem;
+		--images-hide-inwards: -12rem;
+	}
+
+	.app-feature:nth-child(1),
+	.app-feature:nth-child(2) {
+		display: none;
+	}
+}

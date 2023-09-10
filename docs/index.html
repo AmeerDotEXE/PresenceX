@@ -2,55 +2,157 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<title>PresenceX</title>
+
+	<link rel="shortcut icon" href="./assets/icons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+	<meta name="theme-color" content="#ab56e4">
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<div>Coming Soon</div>
-	<div>Latest Version: <span id="last-release-v">Unkown</span></div>
-	<div>Notes: <span id="last-release-n">Unkown</span></div>
-	<div id="last-release-download-buttons">
-		<button id="btn-windows-x86_64">Download for windows (x86_64)</button>
+	<div class="background-glow">
+		<div class="glowball" style="right: 0;top: -5rem;width: 15rem;"></div>
+		<div class="glowball" style="left: -5rem;top: 50rem;"></div>
+		<div class="glowball" style="left: calc(50% - 10rem);top: 100rem;"></div>
 	</div>
-	<script>
-		document.querySelector('#btn-windows-x86_64').addEventListener('click', () => {
-			//url click counter
-			window.location.href = 'https://bit.ly/47Tu0oe';
-		});
-		
-		(async () => {
-			let latestRelease = await fetch('./latest-release.json')
-				.then(r => r.json())
-				.catch(() => null);
-			if (!latestRelease) return;
-
-			document.querySelector('#last-release-v').textContent = latestRelease.version;
-			document.querySelector('#last-release-n').textContent = latestRelease.notes;
-
-			// let buttonsContainer = document.querySelector('#last-release-download-buttons');
-			// let availablePlatforms = Object.keys(latestRelease.platforms);
-
-			// for (let i = 0; i < availablePlatforms.length; i++) {
-			// 	let fullPlatformName = availablePlatforms[i];
-			// 	let formattedName = fullPlatformName
-			// 		.split('-')
-			// 		.map((part, partIndex) => partIndex === 0 ? part : `(${part})`)
-			// 		.join(" ")
-			// 	;
-
-			// 	let button = document.createElement('button');
-			// 	button.textContent = `Download for ${formattedName}`;
-			// 	let url = latestRelease.platforms[fullPlatformName].url;
-			// 	if (url)
-			// 		button.addEventListener('click', () => {
-			// 			window.location.href = url;
-			// 		})
-			// 	;
-
-			// 	buttonsContainer.appendChild(button);
-			// }
-		})();
-	</script>
+	<div class="page-content">
+		<div class="app-container">
+			<div class="app-content">
+				<div class="app-icon">
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,24,24">
+						<defs>
+							<mask id="svg-icon-cuts">
+								<rect x="0" y="0" width="100" height="100" fill="white"></rect>
+								<path d="M 22 20 h -8 l 8 -12" fill="black"></path>
+								<path d="M 1 3 h 8 l -8 12" fill="black"></path>
+							</mask>
+							<linearGradient gradientUnits="userSpaceOnUse" x1="12" y1="0" x2="12" y2="24" id="x-icon-gradient">
+								<stop offset="0" style="stop-color: rgb(87, 104, 234);"></stop>
+								<stop offset="1" style="stop-color: rgb(143, 87, 234);"></stop>
+							</linearGradient>
+						</defs>
+						<!-- yes i manually coded this svg, do not remix or distribute -->
+						<path d="M 0 0 h 7 l 5 10 l 5 -10 h 7 l -7 12 l 7 12 h -7 l -5 -8 l -5 8 h -7 l 7 -12 Z" style="fill: url(#x-icon-gradient);mask: url(#svg-icon-cuts);"></path>
+					</svg>
+				</div>
+				<div class="app-details">
+					<h1 class="app-name text-gradient">PresenceX <span class="text-gradient name-tag">ALPHA</span></h1>
+					<span class="app-description">Best and most capable discord presence program.</span>
+					<div class="flex-space"></div>
+					<div class="main-buttons">
+						<div class="main-button">
+							<svg id="main-button-frame" xmlns="http://www.w3.org/2000/svg" width="20rem" viewBox="0 0 344 76" fill="none">
+								<path d="M47 72.5L6 3H298.5L338.5 72.5H47Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+								<defs>
+									<linearGradient id="main-button-gradient" x1="6" y1="2.5" x2="339" y2="72.5" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#5768EA"/>
+										<stop offset="1" stop-color="#8F57EA"/>
+									</linearGradient>
+								</defs>
+							</svg>
+							<a href="./download/index.html" class="text-gradient main-button-text">Download</a>
+						</div>
+						<div class="main-button small">
+							<svg id="main-small-button-frame" xmlns="http://www.w3.org/2000/svg" width="14rem" viewBox="0 0 228 52" fill="none">
+								<path d="M32.6346 48.5L6 3.35114H196.015L222 48.5H32.6346Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+								<defs>
+								<linearGradient id="main-button-gradient" x1="6" y1="3" x2="222" y2="48.5" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#5768EA"/>
+									<stop offset="1" stop-color="#8F57EA"/>
+								</linearGradient>
+								</defs>
+							</svg>
+							<span class="text-gradient main-button-text" onclick="alert('thanks for trying but this isn\'t implemented yet');">DONATE</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="app-images w-fit-content">
+			<div class="app-image">
+				<img src="./assets/games_window.png" alt="">
+			</div>
+			<div class="app-image">
+				<img src="./assets/live_edit.png" alt="">
+			</div>
+			<div class="app-image center">
+				<img src="./assets/saves_example.png" alt="">
+			</div>
+		</div>
+		<div class="app-features w-fit-content">
+			<div class="app-feature">
+				<div class="feature-name">Lightweight</div>
+				<div class="feature-description">PresenceX barely uses system resources: under 12MB of disk space and RAM.</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">Tray Minimization</div>
+				<div class="feature-description">The app will work quietly in the background and will show up when you want to.</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">Live Editing</div>
+				<div class="feature-description">Editing the presence is as simple as pressing it on the live preview!</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">Save System</div>
+				<div class="feature-description">Your saved presence will show internally so no need for naming entirely.</div>
+			</div>
+			<div class="app-feature">
+				<div class="feature-name">Game IDs</div>
+				<div class="feature-description">You get a large library of (7k) games to show on your profile and more soon!</div>
+			</div>
+		</div>
+		<div class="buttons-section w-fit-content">
+			<div class="main-button medium" style="margin-right: 50%;">
+				<svg id="main-medium-button-frame" xmlns="http://www.w3.org/2000/svg" width="28rem" viewBox="0 0 472 102" fill="none">
+					<path d="M62.7885 99L6 3H411.137L466.541 99H62.7885Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+					<defs>
+						<linearGradient id="main-button-gradient" x1="6.00001" y1="2.30931" x2="467.126" y2="99.5086" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5768EA"/>
+							<stop offset="1" stop-color="#8F57EA"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				<span class="text-gradient main-button-text" onclick="alert('under work, try again later.');">Our Server</span>
+			</div>
+			<div class="main-button large">
+				<svg style="position: absolute;filter: blur(15px);" id="main-large-button-frame" xmlns="http://www.w3.org/2000/svg" width="38rem" viewBox="0 0 626 134" fill="none">
+					<path d="M81.7179 131L6 3H546.183L620.054 131H81.7179Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+					<defs>
+						<linearGradient id="main-button-gradient" x1="6" y1="2" x2="620.5" y2="131.5" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5768EA"/>
+							<stop offset="1" stop-color="#8F57EA"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				<svg id="main-large-button-frame" xmlns="http://www.w3.org/2000/svg" width="38rem" viewBox="0 0 626 134" fill="none">
+					<path d="M81.7179 131L6 3H546.183L620.054 131H81.7179Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+					<defs>
+						<linearGradient id="main-button-gradient" x1="6" y1="2" x2="620.5" y2="131.5" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5768EA"/>
+							<stop offset="1" stop-color="#8F57EA"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				<a href="./download/index.html" class="text-gradient main-button-text">Download</a>
+			</div>
+			<div class="main-button medium" style="margin-left: 50%;">
+				<svg id="main-medium-button-frame" xmlns="http://www.w3.org/2000/svg" width="28rem" viewBox="0 0 472 102" fill="none">
+					<path d="M62.7885 99L6 3H411.137L466.541 99H62.7885Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
+					<defs>
+						<linearGradient id="main-button-gradient" x1="6.00001" y1="2.30931" x2="467.126" y2="99.5086" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#5768EA"/>
+							<stop offset="1" stop-color="#8F57EA"/>
+						</linearGradient>
+					</defs>
+				</svg>
+				<span class="text-gradient main-button-text" onclick="alert('not implemented yet');">Help & F.A.Q.</span>
+			</div>
+		</div>
+		<div class="footer">
+			<span>Copyright © 2023 <a href="https://ameerdotexe.github.io/" style="color: var(--text-secondary);">AmeerDotEXE</a></span>
+		</div>
+	</div>
 </body>
 </html>
