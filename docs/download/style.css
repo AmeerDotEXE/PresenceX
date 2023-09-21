@@ -1,0 +1,72 @@
+.app-container {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 3rem;
+}
+.app-container .app-content {
+	margin-left: 0;
+	flex-direction: column;
+	align-items: center;
+}
+.app-container .app-icon {
+	margin: 0;
+	margin-bottom: 1rem;
+}
+.app-container .app-details {
+	align-items: center;
+	text-align: center;
+}
+.flex-space {
+	height: 1rem;
+}
+.app-container .buttons-section {
+	margin: 0;
+}
+.app-container .buttons-section .main-button:not(:first-child) {
+	opacity: 0.3;
+	cursor: default;
+}
+.app-container .buttons-section .main-button:not(:first-child) .main-button-text {
+	background-image: linear-gradient(white, white);
+}
+.app-container .buttons-section .main-button:not(:first-child) svg {
+	fill: none;
+}
+.app-container .buttons-section .main-button:not(:first-child) svg path {
+	stroke: white;
+}
+
+.app-previews {
+	margin: 0 auto;
+	margin-top: 12rem;
+	max-width: min(96%, 100rem);
+}
+.app-preview {
+	position: relative;
+}
+.app-preview img {
+	width: 100%;
+}
+.app-preview:not(.playing):after {
+	content: "▶";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-size: 128px;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #eee;
+	background-color: rgba(0,0,0,0.5);
+	pointer-events: none;
+}
+
+
+@media screen and (max-width: 65rem) {
+	.app-container {
+		flex-direction: column;
+	}
+}
