@@ -98,19 +98,23 @@
 			</div>
 		</div>
 		<script>
-			document.querySelector('#btn-windows-x86_64').addEventListener('click', () => {
-				//url click counter
-				window.location.href = 'https://bit.ly/47Tu0oe';
-			});
-			
 			(async () => {
 				let latestRelease = await fetch('../latest-release.json')
 					.then(r => r.json())
 					.catch(() => null);
 				if (!latestRelease) return;
 
+				let searchquery = new URLSearchParams(location.search);
+				if (searchquery.get("start-download") !== null) {
+					let downloadUrl = latestRelease.platforms[searchquery.get("start-download")]?.url;
+					if (downloadUrl != null) window.location.href = downloadUrl;
+				}
+
 				document.querySelector('#last-release-v').textContent = latestRelease.version;
 				document.querySelector('#last-release-n').textContent = latestRelease.notes;
+				document.querySelector('#btn-windows-x86_64').addEventListener('click', () => {
+					window.location.href = latestRelease.platforms["windows-x86_64"].url;
+				});
 			})();
 		</script>
 		<div class="footer">

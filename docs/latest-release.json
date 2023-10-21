@@ -1,10 +1,10 @@
 {
-  "version": "v0.2.1",
-  "notes": "open-alpha",
+  "version": "v0.2.2",
+  "notes": "disabled friends tab",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMmlnL0tzcUlYRG5rZ05LZ3RUTGtrdW16VGdvVEpmRFo4ZUF2RG96Y1Q2Uy9jYjcxemVmT2JuMCtQeVA3MURUK2Z4R1dNWkgwSXBTbGZUREJoc2tEVkFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjkzMjU2NzY1CWZpbGU6UHJlc2VuY2VYXzAuMi4xX3g2NF9lbi1VUy5tc2kuemlwCkQwdzhac3dnT3hpK09WdDNVcUlkQzU5aExsUlVTdTVGd0dDMWZZSUhkYldPWGlrOFJsRTFPMGJiYTdsLzQyeHQyNmpXL0dub2lMTEN6QXNtN0doS0J3PT0K",
-      "url": "https://ameerdotexe.github.io/PresenceX/releases/windows-x86_64/PresenceX_0.2.1_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMmpQRWNTSW1wS09uMGx5WnBtcnBiLzNyekpPVnVyd1B4VW1nRitpeUcra0hudjNYVC9XUzBwNmY4RkxpU0VUWVJvNjlyRDdPY091QkorM3VXcjR3SkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjk3ODc5NjU4CWZpbGU6UHJlc2VuY2VYXzAuMi4yX3g2NF9lbi1VUy5tc2kuemlwCjNuMW1MMFFuQXdScU1udU5yTnNOc1hMK1cwdWpucFZPU081RnVaUi91YlNETjhsZi92ZWZhSXNmOU5vWkMvdDNnSEtmalVERjJVY1puUlViV1dXMUNnPT0K",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.2/PresenceX_0.2.2_x64_en-US.msi.zip"
     }
   }
 }
