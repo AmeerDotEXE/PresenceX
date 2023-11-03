@@ -99,7 +99,7 @@
 		</div>
 		<script>
 			(async () => {
-				let latestRelease = await fetch('../latest-release.json')
+				let latestRelease = await fetch('../latest-release.json', { cache: 'no-cache' })
 					.then(r => r.json())
 					.catch(() => null);
 				if (!latestRelease) return;
