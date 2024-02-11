@@ -1,10 +1,10 @@
 {
-  "version": "v0.2.3",
-  "notes": "fixed some images aren't visible",
+  "version": "v0.2.4",
+  "notes": "settings implemented.",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMmxPUEFuSzRSMUtOditneVlleUZMOTFqWnpUZS9GN0tkWkk2TCtqYjQ0RGlhNmdLK3JkY1pnQlBiNzhjRDVUQTY1VnVUMkNTQTJxS25wb2hLOUxEbFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzAwODU4MjIwCWZpbGU6UHJlc2VuY2VYXzAuMi4zX3g2NF9lbi1VUy5tc2kuemlwCkxrRmdXTjRWTEVRVzAyYWZKY2VoSzl1YVNKRDRKUUJlTnFqNnR4L0pqdUNlZk85MW5NQW5UMm1wOHpVL2oycWZsS0l3aUMvZ0JxOUJlUXhndGRSb0NBPT0K",
-      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.3/PresenceX_0.2.3_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm1KclFTRU0wbUlKOHh2aG0wL1crdTZ2WXVQaDB3Zlk2ZEd4N3BQbW56WkhUL3lPSVo4RzR0aEZPazZnSjUxVjFSQXpNZFpIVit1VzF6ekN4eWZvcndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzA3NTk4Nzc2CWZpbGU6UHJlc2VuY2VYXzAuMi40X3g2NF9lbi1VUy5tc2kuemlwCm41M3ZFQ3BtY1hMMnZac2VZckRqNTI2QXYvMFNvRklWcGJkY3E1dHZmc3hiWHlPb2VqMGpNRzc2ZzU3SDRKQ3hnTlhXWnB0dlo2aWhLaEl1TVl6NUF3PT0K",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.4/PresenceX_0.2.4_x64_en-US.msi.zip"
     }
   }
 }
