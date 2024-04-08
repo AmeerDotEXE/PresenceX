@@ -1,10 +1,14 @@
 {
-  "version": "v0.2.4",
-  "notes": "settings implemented.",
+  "version": "v0.2.5",
+  "notes": "bug fixes.",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm1KclFTRU0wbUlKOHh2aG0wL1crdTZ2WXVQaDB3Zlk2ZEd4N3BQbW56WkhUL3lPSVo4RzR0aEZPazZnSjUxVjFSQXpNZFpIVit1VzF6ekN4eWZvcndRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzA3NTk4Nzc2CWZpbGU6UHJlc2VuY2VYXzAuMi40X3g2NF9lbi1VUy5tc2kuemlwCm41M3ZFQ3BtY1hMMnZac2VZckRqNTI2QXYvMFNvRklWcGJkY3E1dHZmc3hiWHlPb2VqMGpNRzc2ZzU3SDRKQ3hnTlhXWnB0dlo2aWhLaEl1TVl6NUF3PT0K",
-      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.4/PresenceX_0.2.4_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm5TV0gvT1JBTmhmalZ2M0M1NG9VWG5KREc0anJacU9RdzNpU2ZIc2JlNk95MU90V1doMm5UMzdxbmk5cWQxS1FlRVZDTXZkYkUzVWRReVlUZUNqL1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEyNTQ2MDA4CWZpbGU6UHJlc2VuY2VYXzAuMi41X3g2NF9lbi1VUy5tc2kuemlwCndXZm1JRkU1UEs2Wi8wbTh6V2lSbkNLbXZ2ZWhZMlh1ZWc2OE9ZSnp1MHhxbVRmYXZFblBtSHdmSWVmczVZd1gwUVRkS3lvbVZwbUxxN0VBL2VKbERBPT0K",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.5/PresenceX_0.2.5_x64_en-US.msi.zip"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm9kcFk0TXR2M2lrWVozZzV5MDVYM0p5d2hORU03T2xRNkpoUnN3MUFXS2hwYnhLeHAyUlNkaVZFWTF3U2RyaUpWS0NZWkxCTStUY001bm11M3oxekF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEyNTQ0MzM4CWZpbGU6cHJlc2VuY2UteF8wLjIuNV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTVczQVRSU0g3aElWOVB1RW9PU0p2bGtMVHd6eHFFN1EwTVEvb0NGSnRBR01sRExPbXpONzJPYjVvTDF2VGdzdGh0TVdwQTl6TVFvMDFXeTRMMkRqRHc9PQo=",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.5/presence-x_0.2.5_amd64.AppImage.tar.gz"
     }
   }
 }

@@ -23,17 +23,17 @@
 .app-container .buttons-section {
 	margin: 0;
 }
-.app-container .buttons-section .main-button:not(:first-child) {
+.app-container .buttons-section .main-button:last-child {
 	opacity: 0.3;
 	cursor: default;
 }
-.app-container .buttons-section .main-button:not(:first-child) .main-button-text {
+.app-container .buttons-section .main-button:last-child .main-button-text {
 	background-image: linear-gradient(white, white);
 }
-.app-container .buttons-section .main-button:not(:first-child) svg {
+.app-container .buttons-section .main-button:last-child svg {
 	fill: none;
 }
-.app-container .buttons-section .main-button:not(:first-child) svg path {
+.app-container .buttons-section .main-button:last-child svg path {
 	stroke: white;
 }
 

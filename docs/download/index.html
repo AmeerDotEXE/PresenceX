@@ -6,9 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=0.5">
 	<title>PresenceX Download</title>
 
+	<link rel="canonical" href="https://ameerdotexe.github.io/PresenceX/"/>
+	<meta name="description" content="A simple to use Discord Rich Presence program without multiple features and easy to use interface.">
+	<meta property="og:site_name" content="PresenceX" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="PresenceX | Download" />
+	<meta property="og:description"
+		content="
+			A simple to use Discord Rich Presence program
+			with multiple features and easy to use interface." />
+	<meta property="og:url" content="https://ameerdotexe.github.io/PresenceX/" />
+	<meta property="og:image" content="https://ameerdotexe.github.io/PresenceX/assets/icons/favicon-128-128.png" />
+	<meta property="og:image:width" content="32" />
+	<meta property="og:image:height" content="32" />
+	<meta property="og:image:alt" content="PresenceX Icon" />
+
 	<link rel="shortcut icon" href="../assets/icons/favicon.ico">
 	<link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="../assets/icons/favicon-128-128.png">
 	<meta name="theme-color" content="#ab56e4">
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="../style.css">
@@ -60,7 +76,7 @@
 					</svg>
 					<span class="text-gradient main-button-text">Windows</span>
 				</div>
-				<div class="main-button medium" onclick="alert('Unavailable');">
+				<div class="main-button medium" id="btn-linux-amd64">
 					<svg id="main-medium-button-frame" xmlns="http://www.w3.org/2000/svg" width="28rem" viewBox="0 0 472 102" fill="none">
 						<path d="M62.7885 99L6 3H411.137L466.541 99H62.7885Z" stroke="url(#main-button-gradient)" stroke-width="6"/>
 						<defs>
@@ -114,6 +130,9 @@
 				document.querySelector('#last-release-n').textContent = latestRelease.notes;
 				document.querySelector('#btn-windows-x86_64').addEventListener('click', () => {
 					window.location.href = latestRelease.platforms["windows-x86_64"].url;
+				});
+				document.querySelector('#btn-linux-amd64').addEventListener('click', () => {
+					window.location.href = latestRelease.platforms["linux-x86_64"].url;
 				});
 			})();
 		</script>
