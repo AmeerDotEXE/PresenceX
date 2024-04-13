@@ -1,14 +1,14 @@
 {
-  "version": "v0.2.5",
-  "notes": "bug fixes.",
+  "version": "v0.2.6",
+  "notes": "added autostart.",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm5TV0gvT1JBTmhmalZ2M0M1NG9VWG5KREc0anJacU9RdzNpU2ZIc2JlNk95MU90V1doMm5UMzdxbmk5cWQxS1FlRVZDTXZkYkUzVWRReVlUZUNqL1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEyNTQ2MDA4CWZpbGU6UHJlc2VuY2VYXzAuMi41X3g2NF9lbi1VUy5tc2kuemlwCndXZm1JRkU1UEs2Wi8wbTh6V2lSbkNLbXZ2ZWhZMlh1ZWc2OE9ZSnp1MHhxbVRmYXZFblBtSHdmSWVmczVZd1gwUVRkS3lvbVZwbUxxN0VBL2VKbERBPT0K",
-      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.5/PresenceX_0.2.5_x64_en-US.msi.zip"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMnFscHdqcjdTeVRYVG9adWdIWnFGOUJJNGJOQmJ2a2UrRXg0RWlTbVU0c200Z3hlMnNIM0tPV0xPNW1lN01pR01UNUh3RjM3dzh6VVYvR3RLOWN2N3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzMDQwNzc1CWZpbGU6UHJlc2VuY2VYXzAuMi42X3g2NF9lbi1VUy5tc2kuemlwCjhJd2hQT05EakM2MElEUFVlTzV6a0t1ekhuZTRlSG9lVjN6M2R3UUFhWmhRbXNIL3NCcTRubVlwb2I1K1hqcGtJSWtOaEt5dFFvUS9KVUVJQ1dRSUFBPT0K",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.6/PresenceX_0.2.6_x64_en-US.msi.zip"
     },
     "linux-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm9kcFk0TXR2M2lrWVozZzV5MDVYM0p5d2hORU03T2xRNkpoUnN3MUFXS2hwYnhLeHAyUlNkaVZFWTF3U2RyaUpWS0NZWkxCTStUY001bm11M3oxekF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEyNTQ0MzM4CWZpbGU6cHJlc2VuY2UteF8wLjIuNV9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTVczQVRSU0g3aElWOVB1RW9PU0p2bGtMVHd6eHFFN1EwTVEvb0NGSnRBR01sRExPbXpONzJPYjVvTDF2VGdzdGh0TVdwQTl6TVFvMDFXeTRMMkRqRHc9PQo=",
-      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.5/presence-x_0.2.5_amd64.AppImage.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUXBTQjRxbVNzMm1vR0dKRVVST0VPWnpjVmFWQ2l6dERhSktmTDUxc0hhaWpYOEhvWFZxUXMrMGxHTGJrYUNIQlI0WDNWUGFSVFdaRU5wWkUxUjBSM3l0S2dQZDYyb2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzEzMDQ1MTU5CWZpbGU6cHJlc2VuY2UteF8wLjIuNl9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTDZETGJ0VU5MSEE5STlUSks3RUVjUnZzb0RzWW5paEVrMXJRSzhXd2hQdDlmUFJPcEJkNTBwektZS084N04xL3RhamdkU1l0RWFPNXFMdU9RdlB6RFE9PQo=",
+      "url": "https://github.com/AmeerDotEXE/PresenceX/releases/download/v0.2.6/presence-x_0.2.6_amd64.AppImage.tar.gz"
     }
   }
 }
